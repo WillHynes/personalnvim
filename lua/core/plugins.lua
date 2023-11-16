@@ -13,6 +13,8 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
   'williamboman/mason.nvim',
+  'williamboman/mason-lspconfig.nvim',
+  'neovim/nvim-lspconfig',
   'stevearc/oil.nvim',
   'nvim-treesitter/nvim-treesitter',
   {
@@ -22,6 +24,22 @@ local plugins = {
   },
   'nvim-tree/nvim-web-devicons',
   'nvim-tree/nvim-tree.lua',
+  'rebelot/kanagawa.nvim',
+  {
+    'romgrk/barbar.nvim',
+    dependencies = {
+      'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
+      'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+	},
+  },
+  'hrsh7th/nvim-cmp',
+  'hrsh7th/cmp-nvim-lsp',
+  'L3MON4D3/LuaSnip',
+  'saadparwaiz1/cmp_luasnip',
+  'rafamadriz/friendly-snippets',
+  'nvim-lualine/lualine.nvim',
+  'm4xshen/autoclose.nvim',
+  { 'nvim-focus/focus.nvim', version = '*' },
 }
 
 local opts = {}

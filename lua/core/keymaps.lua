@@ -1,9 +1,31 @@
 vim.g.mapleader = " "
 
+-- NvimTree Mappings
+vim.keymap.set('n', '<leader>e', ':NvimTreeFindFile<cr>')
+vim.keymap.set('n', '<leader>tt', ':NvimTreeToggle<cr>')
+
+-- Buffer Mappings
+vim.keymap.set('n', '<tab>', ':BufferNext<cr>')
+vim.keymap.set('n', '<s-tab>', ':BufferPrevious<cr>')
+vim.keymap.set('n', '<leader>x', ':BufferClose<cr>')
+
+-- Focus Mappings
+local focusmap = function(direction)
+    vim.keymap.set('n', '<Leader>'..direction, function()
+        require('focus').split_command(direction)
+    end, { desc = string.format('Create or move to split (%s)', direction) })
+end
+
+-- Use `<Leader>h` to split the screen to the left, same as command FocusSplitLeft etc
+focusmap('h')
+focusmap('j')
+focusmap('k')
+focusmap('l')
+
+-- QOL Mapping
 vim.keymap.set('n', ';', ':')
 vim.keymap.set('i', 'kj', '<esc>')
-vim.keymap.set('n', '<leader>e', ':NvimTreeFocus<cr>')
-vim.keymap.set('n', '<leader>tt', ':NvimTreeToggle<cr>')
+vim.keymap.set('n', '<leader>q', ':qa<cr>')
 
 vim.cmd([[
   set number
