@@ -12,34 +12,43 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-  'williamboman/mason.nvim',
-  'williamboman/mason-lspconfig.nvim',
-  'neovim/nvim-lspconfig',
-  'stevearc/oil.nvim',
-  'nvim-treesitter/nvim-treesitter',
+
+  -- Navigation
   {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.4",
     dependencies = { { "nvim-lua/plenary.nvim" } },
   },
-  'nvim-tree/nvim-web-devicons',
   'nvim-tree/nvim-tree.lua',
+  'stevearc/oil.nvim',
+
+  -- Aesthetic plugins
   'rebelot/kanagawa.nvim',
+  'nvim-tree/nvim-web-devicons',
+  'nvim-lualine/lualine.nvim',
+
+  -- QOL plugins
   {
     'romgrk/barbar.nvim',
     dependencies = {
       'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
       'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
-	},
+	  },
   },
+  { 'nvim-focus/focus.nvim', version = '*' },
+  {'akinsho/toggleterm.nvim', version = "*", config = true},
+
+  -- Autocompletion / LSP plugins - this includes highlighting etc
   'hrsh7th/nvim-cmp',
   'hrsh7th/cmp-nvim-lsp',
   'L3MON4D3/LuaSnip',
   'saadparwaiz1/cmp_luasnip',
   'rafamadriz/friendly-snippets',
-  'nvim-lualine/lualine.nvim',
   'm4xshen/autoclose.nvim',
-  { 'nvim-focus/focus.nvim', version = '*' },
+  'williamboman/mason.nvim',
+  'williamboman/mason-lspconfig.nvim',
+  'neovim/nvim-lspconfig',
+  'nvim-treesitter/nvim-treesitter',
 }
 
 local opts = {}

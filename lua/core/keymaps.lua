@@ -27,6 +27,7 @@ vim.keymap.set('n', ';', ':')
 vim.keymap.set('i', 'kj', '<esc>')
 vim.keymap.set('n', '<leader>q', ':qa<cr>')
 vim.keymap.set('n', '<esc>', '<esc>:noh<cr>')
+vim.keymap.set('n', '<leader>v', ':ToggleTerm direction=vertical')
 
 vim.cmd([[
   set number
