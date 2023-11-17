@@ -26,8 +26,10 @@ focusmap('l')
 vim.keymap.set('n', ';', ':')
 vim.keymap.set('i', 'kj', '<esc>')
 vim.keymap.set('n', '<leader>q', ':qa<cr>')
+vim.keymap.set('n', '<leader>wq', ':wqa<cr>')
+vim.keymap.set('n', '<leader>so', ':so %<cr>')
 vim.keymap.set('n', '<esc>', '<esc>:noh<cr>')
-vim.keymap.set('n', '<leader>v', ':ToggleTerm direction=vertical')
+vim.keymap.set('n', '<leader>v', ':ToggleTerm size=90 direction=vertical<cr>')
 
 vim.cmd([[
   set number
