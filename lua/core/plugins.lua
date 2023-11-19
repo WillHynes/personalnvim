@@ -21,6 +21,7 @@ local plugins = {
   },
   'nvim-tree/nvim-tree.lua',
   'stevearc/oil.nvim',
+  'ThePrimeagen/harpoon',
 
   -- Aesthetic plugins
   'rebelot/kanagawa.nvim',
@@ -38,6 +39,7 @@ local plugins = {
   },
   { 'nvim-focus/focus.nvim', version = '*' },
   {'akinsho/toggleterm.nvim', version = "*", config = true},
+  'David-Kunz/gen.nvim',
 
   -- Autocompletion / LSP plugins - this includes highlighting etc
   'hrsh7th/nvim-cmp',
@@ -50,6 +52,10 @@ local plugins = {
   'williamboman/mason-lspconfig.nvim',
   'neovim/nvim-lspconfig',
   'nvim-treesitter/nvim-treesitter',
+  {
+	"folke/trouble.nvim",
+	dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
 }
 
 local opts = {}
