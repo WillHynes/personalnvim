@@ -31,6 +31,7 @@ vim.keymap.set('n', '<leader>so', ':so %<cr>')
 vim.keymap.set('n', '<esc>', '<esc>:noh<cr>')
 vim.keymap.set('n', '<leader>v', ':ToggleTerm size=90 direction=vertical<cr>')
 
+
 vim.cmd([[
   set number
   set relativenumber
