@@ -46,6 +46,8 @@ vim.keymap.set("n", "<leader>pq", function() require("trouble").toggle("quickfix
 vim.keymap.set("n", "<leader>pl", function() require("trouble").toggle("loclist") end)
 vim.keymap.set("n", "gR", function() require("trouble").toggle("lsp_references") end)
 
+vim.opt.spelllang = 'en_gb'
+
 vim.cmd([[
   set number
   set relativenumber

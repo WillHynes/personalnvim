@@ -40,6 +40,14 @@ local plugins = {
   { 'nvim-focus/focus.nvim', version = '*' },
   {'akinsho/toggleterm.nvim', version = "*", config = true},
   'David-Kunz/gen.nvim',
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    init = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+    end,
+  },
 
   -- Autocompletion / LSP plugins - this includes highlighting etc
   'hrsh7th/nvim-cmp',
