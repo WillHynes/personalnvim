@@ -39,7 +39,7 @@ local plugins = {
   },
   { 'nvim-focus/focus.nvim', version = '*' },
   {'akinsho/toggleterm.nvim', version = "*", config = true},
-  'David-Kunz/gen.nvim',
+  'kjjuno/gen.nvim',
   {
     "folke/which-key.nvim",
     event = "VeryLazy",
