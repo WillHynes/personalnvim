@@ -42,27 +42,6 @@ local plugins = {
 		},
 	},
 
-<<<<<<< Updated upstream
-  -- QOL plugins
-  {
-    'romgrk/barbar.nvim',
-    dependencies = {
-      'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
-      'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
-	  },
-  },
-  { 'nvim-focus/focus.nvim', version = '*' },
-  {'akinsho/toggleterm.nvim', version = "*", config = true},
-  'kjjuno/gen.nvim',
-  {
-    "folke/which-key.nvim",
-    event = "VeryLazy",
-    init = function()
-      vim.o.timeout = true
-      vim.o.timeoutlen = 300
-    end,
-  },
-=======
 	-- QOL plugins
 	{
 		"romgrk/barbar.nvim",
@@ -82,7 +61,6 @@ local plugins = {
 			vim.o.timeoutlen = 300
 		end,
 	},
->>>>>>> Stashed changes
 
 	-- Autocompletion / LSP plugins - this includes highlighting etc
 	{
